@@ -1,0 +1,322 @@
+/* This is a basic quiz program with 10 questions
+    inclusive of +4 and -1 marking system */
+
+
+#include <iostream>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+    int score = 0, ch;
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    system("cls");
+    cout << " Hello and welcome to the Quiz App " << endl;
+    cout << " ******* Rules and Regulations ******* " << endl;
+    cout << " 1. There will be a set of questions to be answered " << endl;
+    cout << " 2. Each correct answer gives you a score of +4, " << endl;
+    cout << " 3. Whereas, each wrong answer gives you a score of -1, " << endl;
+    cout << " 4. Final grades will be based on answers you have given " << endl;
+    cout << " 5. Choose the respective number only " << endl;
+    cout << " 6. In order to skip answer, choose any other number " << endl;
+    cout << "" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Now, to start press any key to continue";
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cin.get();
+    system("cls");
+
+    // Set color to light blue for questions
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 1. Which river is considered sacred in Hinduism and flows through the city of Varanasi?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Ganges " << endl;
+    cout << "2. Yamuna " << endl;
+    cout << "3. Brahmaputra " << endl;
+    cout << "4. Narmada " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";    cin >> ch;
+    if (ch == 1)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 2 || ch == 3 || ch == 4)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Ganges.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+    
+    system("cls");
+
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 2. Who was the first female Prime Minister of India?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Sushma Swaraj" << endl;
+    cout << "2. Indira Gandhi " << endl;
+    cout << "3. Sonia Gandhi " << endl;
+    cout << "4. Mamata Banerjee " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";    cin >> ch;
+    if (ch == 2)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 1 || ch == 3 || ch == 4)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Indira Gandhi.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+
+    system("cls");
+
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 3. Which monument in India is also known as the 'Symbol of Love'?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Gateway of India " << endl;
+    cout << "2. Qutub Minar " << endl;
+    cout << "3. Hawa Mahal " << endl;
+    cout << "4. Taj Mahal " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";    cin >> ch;
+    if (ch == 4)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 1 || ch == 2 || ch == 3)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Taj Mahal.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+    
+    system("cls");
+
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 4. Which Indian state is famous for its tea plantations and is known as the 'Scotland of the East'?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Assam " << endl;
+    cout << "2. Kerala " << endl;
+    cout << "3. Meghalaya " << endl;
+    cout << "4. Himachal Pradesh " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";    cin >> ch;
+    if (ch == 1)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 2 || ch == 3 || ch == 4)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Assam.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+
+    system("cls");
+
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 5. What is the highest civilian award in India, awarded for exceptional service or performance of the highest order?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Bharat Ratna " << endl;
+    cout << "2. Padma Bhushan " << endl;
+    cout << "3. Padma Vibhushan " << endl;
+    cout << "4. Param Vir Chakra " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";
+    cin >> ch;
+    if (ch == 1)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 2 || ch == 3 || ch == 4)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Bharat Ratna.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+
+    system("cls");
+
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 6. Which festival, also known as the Festival of Lights, is celebrated across India with the lighting of lamps, fireworks, and sweets?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Holi " << endl;
+    cout << "2. Diwali " << endl;
+    cout << "3. Dussehra " << endl;
+    cout << "4. Ram Navami " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";    cin >> ch;
+    if (ch == 2)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 1 || ch == 3 || ch == 4)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Diwali.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+
+    system("cls");
+
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 7. Which Indian classical dance form is characterized by intricate footwork and facial expressions and originated in the state of Tamil Nadu?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Kathak " << endl;
+    cout << "2. Bharatanatyam " << endl;
+    cout << "3. Odissi " << endl;
+    cout << "4. Kathakali " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";    cin >> ch;
+    if (ch == 2)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 1 || ch == 3 || ch == 4)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Bharatanatyam.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+
+    system("cls");
+
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 8. Which Mughal emperor commissioned the construction of the Red Fort in Delhi?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Akbar " << endl;
+    cout << "2. Aurangzeb " << endl;
+    cout << "3. Shah Jahan " << endl;
+    cout << "4. Humayun " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";    cin >> ch;
+    if (ch == 3)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 1 || ch == 2 || ch == 4)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Shah Jahan.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+
+    system("cls");
+
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 9. What is the name of the traditional Indian garment worn by women, consisting of a long piece of cloth draped elegantly around the body?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Salwar Kameez " << endl;
+    cout << "2. Lehenga " << endl;
+    cout << "3. Sari " << endl;
+    cout << "4. Kurta " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";    cin >> ch;
+    if (ch == 3)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 1 || ch == 2 || ch == 4)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Sari.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+
+    system("cls");
+
+    SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+    cout << "Question 10. Which Indian city is home to the Gateway of India, a famous monument overlooking the Arabian Sea?" << endl;
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    cout << "1. Mumbai " << endl;
+    cout << "2. Delhi " << endl;
+    cout << "3. Kolkata " << endl;
+    cout << "4. Chennai " << endl;
+    cout << "" << endl;
+    cout << "Enter Your Answer: ";    cin >> ch;
+    if (ch == 1)
+    {
+        score = score + 4;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+        cout << "Your answer is correct.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    else if (ch == 2 || ch == 3 || ch == 4)
+    {
+        score = score - 1;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
+        cout << "Your answer is incorrect, correct answer is Mumbai.";
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+        cin.get();
+    }
+    cin.get();
+    
+    system("cls");
+    cout << "You scored " << score << endl;
+}
