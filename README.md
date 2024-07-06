@@ -7,7 +7,7 @@
 
 
 ## Overview of the Project
-
+Quiz Model based on C++ Programming
 
 ### Objective
 The objective of this project is to perform Exploratory Data Analysis (EDA) on a dataset containing population data from 1970 to 2022 for countries around the world. The aim is to uncover insights into population trends, distributions, correlations, and outliers through visualizations.
@@ -27,18 +27,6 @@ The objective of this project is to perform Exploratory Data Analysis (EDA) on a
 - **Population Distributions**: Histograms to show how populations have been distributed over time.
 - **Inter-year Relationships**: Scatter plots to reveal relationships between population data from different years.
 - **Correlation Patterns**: Heatmaps to display the correlation between populations over the years, highlighting significant trends and patterns.
-
-This project provides a comprehensive overview of global population trends and insights, useful for further studies or policy-making related to demographic changes.
-
-
-
-
-**Name:** Tarun Surana
-**Company:** CODTECH IT SOLUTIONS
-**ID:** CT4CPP1766
-**Domain:** "C++ PROGRAMMING
-**Duration:** JUNE to JULY 2024
-**Mentor:** SRAVANI GOUNI
 
 Overview of the Project
 Project: Quiz Model based on C++ Programming
