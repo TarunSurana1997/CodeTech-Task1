@@ -8,6 +8,10 @@
 
 ## Overview of the Project
 Quiz Model based on C++ Programming
+![1a](https://github.com/TarunSurana1997/CodeTech-Task1/assets/115148146/16c08c37-ded0-4ef1-84e7-b70d61eacf52)
+![1b](https://github.com/TarunSurana1997/CodeTech-Task1/assets/115148146/8ced418f-11cb-4310-b782-d865c097ddab)
+![1c](https://github.com/TarunSurana1997/CodeTech-Task1/assets/115148146/7be61ada-dec7-4c79-9fca-00b21662ac61)
+
 
 ### Objective
 The objective of this project is to create an interactive console-based Quiz Application using C++. The application aims to provide users with a set of multiple-choice questions on general knowledge topics and evaluate their performance based on their responses.
