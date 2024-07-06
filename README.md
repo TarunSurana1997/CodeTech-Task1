@@ -5,12 +5,12 @@
 **Duration:** May to June 2024  
 **Mentor:** SRAVANI GOUNI  
 
-Name: Tarun Surana
-Company: CODTECH IT SOLUTIONS
-ID: CT4CPP1766
-Domain: "C++ PROGRAMMING
-Duration: JUNE to JULY 2024
-Mentor: SRAVANI GOUNI
+**Name:** Tarun Surana
+**Company:** CODTECH IT SOLUTIONS
+**ID:** CT4CPP1766
+**Domain:** "C++ PROGRAMMING
+**Duration:** JUNE to JULY 2024
+**Mentor:** SRAVANI GOUNI
 
 Overview of the Project
 Project: Quiz Model based on C++ Programming
