@@ -1,26 +1,28 @@
 Name: Tarun Surana
 Company: CODTECH IT SOLUTIONS
 ID: CT4CPP1766
-Domain: Data Analytics
-Duration: May to June 2024
+Domain: "C++ PROGRAMMING
+Duration: JUNE to JULY 2024
 Mentor: SRAVANI GOUNI
 
 Overview of the Project
-Project: Exploratory Data Analysis (EDA) on World Population Dataset
-Screenshot 2024-06-02 141419
+Project: Quiz Model based on c++ Programming
 
 Objective
-The objective of this project is to perform Exploratory Data Analysis (EDA) on a dataset containing population data from 1970 to 2022 for countries around the world. The aim is to uncover insights into population trends, distributions, correlations, and outliers through visualizations.
+The objective of this project is to create an interactive console-based Quiz Application using C++. The application aims to provide users with a set of multiple-choice questions on general knowledge topics and evaluate their performance based on their responses.
 
 Key Activities
-Data Cleaning: Ensuring the dataset is free from inconsistencies and missing values.
-Data Visualization: Creating visualizations to understand data distributions, trends, and relationships.
-Correlation Analysis: Identifying correlations between population figures across different years.
+Design User Interface and Questions: Plan the console layout and create a set of multiple-choice questions with answer options.
+Implement Input Handling and Scoring: Capture user answers, validate input, and develop a scoring system to track correct and incorrect answers.
+Provide Feedback and Manage Console: Give instant feedback on answers, clear the console after each question, and use text colors for emphasis.
+Display Final Score and Test: Calculate and show the user's total score at the end of the quiz, and test the application to ensure it works correctly.
+
 Technologies Used
 Python: The primary programming language for data analysis.
 pandas: Used for data manipulation and analysis.
 matplotlib: Employed for creating static, animated, and interactive visualizations.
 seaborn: Utilized for making statistical graphics that are informative and attractive.
+
 Key Insights
 Population Distributions: Histograms to show how populations have been distributed over time.
 Inter-year Relationships: Scatter plots to reveal relationships between population data from different years.
