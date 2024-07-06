@@ -18,13 +18,16 @@ Provide Feedback and Manage Console: Give instant feedback on answers, clear the
 Display Final Score and Test: Calculate and show the user's total score at the end of the quiz, and test the application to ensure it works correctly.
 
 Technologies Used
-Python: The primary programming language for data analysis.
-pandas: Used for data manipulation and analysis.
-matplotlib: Employed for creating static, animated, and interactive visualizations.
-seaborn: Utilized for making statistical graphics that are informative and attractive.
+Development Environment & IDE (Integrated Development Environment): Such as Visual Studio, or any C++ compatible IDE for writing and debugging the code.
+Compiler: A C++ compiler (e.g., GCC) to compile and run the application.
+Libraries:
+  <iostream>: Standard C++ library for input and output operations.
+  <windows.h>: Windows API library for handling console text color and other console-specific functions.
+Console Commands: system("cls"): To clear the console screen.
 
 Key Insights
-Population Distributions: Histograms to show how populations have been distributed over time.
-Inter-year Relationships: Scatter plots to reveal relationships between population data from different years.
-Correlation Patterns: Heatmaps to display the correlation between populations over the years, highlighting significant trends and patterns.
-This project provides a comprehensive overview of global population trends and insights, useful for further studies or policy-making related to demographic changes.
+Interactive User Interface: The use of colored text and clear console management enhances the user experience by making the quiz visually appealing and easy to navigate.
+Immediate Feedback: Providing instant feedback on answers helps users learn and understand their mistakes, reinforcing correct information.
+Score Tracking: A simple and effective scoring system motivates users by giving them a tangible measure of their performance.
+Input Validation: Ensuring valid user input improves the reliability of the application and prevents errors during the quiz.
+Educational Value: The quiz serves as a valuable educational tool, reinforcing general knowledge through an engaging and interactive format.
