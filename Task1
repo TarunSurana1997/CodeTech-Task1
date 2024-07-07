@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <windows.h>
-
 using namespace std;
 
 int main()
@@ -27,7 +26,6 @@ int main()
     cin.get();
     system("cls");
 
-    // Set color to light blue for questions
     SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
     cout << "Question 1. Which river is considered sacred in Hinduism and flows through the city of Varanasi?" << endl;
     SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
@@ -318,5 +316,20 @@ int main()
     cin.get();
     
     system("cls");
-    cout << "You scored " << score << endl;
+    if (score >= 35)
+    {
+        cout << "Great Job, You scored " << score << " marks." << endl;
+    }
+    else if (score >=25)
+    {
+        cout << "Good Job, You scored " << score << " marks." << endl;
+    }
+    else if (score >=15)
+    {
+        cout << "You scored " << score << " marks, need practice" << endl;
+    }
+    else if (score < 15)
+    {
+        cout << "You scored " << score << " marks, need a lot of improvement." << endl;
+    }   
 }
